@@ -16,7 +16,7 @@
 
 #define BASE 0
 #define LOWER 1
-#define MOUSE_KEYS 9
+#define MOUSE_KEYS 3
 #define MOUSE_TP 10
 #define MOUSE_TP_SET 11
 
@@ -101,10 +101,10 @@
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-&trans  &trans        &trans    &trans     &trans      &trans    &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &trans
-&trans  &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans        &trans    &trans     &trans      &trans    &trans      &trans          &trans          &trans        &trans           &trans
-                                &mo 1      &mo 2       &trans    &mkp RCLK   &mkp LCLK       &mkp MCLK
+&tog 11  &trans        &trans    &trans     &trans      &trans    &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &trans
+&trans   &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans   &trans        &trans    &trans     &trans      &trans    &trans      &trans          &trans          &trans        &trans           &trans
+                                 &mo 1      &mo 2       &trans    &mkp RCLK   &mkp LCLK       &mkp MCLK
             >;
         };
 
