@@ -23,6 +23,7 @@
 #define MIRYOKU_NUM 5
 #define MIRYOKU_FUN 6
 #define MIRYOKU_BUTTON 7
+#define MIRYOKU_APP_AD 8
 #define MOUSE_KEYS 9
 #define MOUSE_TP 10
 #define MOUSE_TP_SET 11
