@@ -72,7 +72,22 @@
 
 // Disable line-wrap in your editor to see a "visualization" of the key layouts
 / {
-
+  behaviors {
+    u_mt: u_mt {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
+    u_lt: u_lt {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      flavor = "tap-preferred";
+      bindings = <&mo>, <&kp>;
+    };
+  };
   keymap {
     compatible = "zmk,keymap";
 
